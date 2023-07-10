@@ -15,7 +15,7 @@ Public Class WebService1
     Public Function HelloWorld(name As String) As String
 
 
-        Dim path As String = HttpContext.Current.Server.MapPath("~/yy1.txt")
+        Dim path As String = HttpContext.Current.Server.MapPath("~/file.txt")
 
         If Not File.Exists(path) Then
             Dim createText As String() = {name, name, name}
